@@ -1,11 +1,13 @@
 import "./App.css";
-import ThemeToggle from "./components/ThemeToggle";
+import { ModeToggle } from "./components/mode-toggle";
 
 function App() {
   return (
     <>
       <section>Calculator</section>
-      <ThemeToggle />
+      <aside className="fixed top-0 right-0 p-4">
+        <ModeToggle />
+      </aside>
     </>
   );
 }
